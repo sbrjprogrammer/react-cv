@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <script type="text/babel">
+
+
+                  function MainCom(){
+                       return <MainTable/>
+
+                   }
+
+
+
+                  function MainTable(){
+                      return <div style={{backgroundColor:"black"}}>
+
+                       <table>
+                           <tr>
+                           <Tabledat1/>
+                           <Tabledat2/>
+
+                       </tr>
+                           </table>
+                           </div>
+                  }
+
+
+
+                  function Tabledat1(){
+
+
+                   return <td style={{textAlign: "center"}}>
+                               <img className="pics" src="./images/WhatsApp Image 2021-03-25 at 12.28.13 PM.jpeg" alt=""/>
+                               <h2> Shahzaib siraj</h2>
+                                 <p style={{color: "green"}}>Web developer</p>
+                           </td>
+
+
+                  }
+
+
+
+                  function Tabledat2(){
+
+                  
+                    return   <td>
+                    
+                    <h1>About me</h1> <br/> 
+                        <p style={{color: "rgb(56, 100, 56)"}}>22 years / freelancer </p> <br/>
+                        <p style={{color: "dimgray"}}>i am a full stack webdeveloper with a passion for metrics and
+                            beating former <br/> "best-yets. prototype 25 new product features per year for <br/>
+                            deceased rework by 22 percent and cost 15%.consistently receive high user <br/>
+                            experience scores for all web developement projects,including a 55% increase <br/> for
+                            flexor.inc
+                            passionate about bulidingworld class web application <br/></p>
+                            <br/><br/>
+                            <h1>My services</h1>
+                            <br/> <br/>
+                            <ChildTable/>
+                    
+                    </td>
+                    
+                   
+                
+                }
+
+
+
+                function ChildTable(){
+                    return <table style={{borderSpacing:"1em"}}>
+                        <tr>
+                            <ChildTableDat1/>
+                            <ChildTableDat2/>
+                           
+
+                            </tr>
+                            <tr>
+                                <ChildTableDat3/>
+                                <ChildTableDat4/>
+                                
+                                </tr>
+                        
+                        </table>
+                }
+
+
+                function ChildTableDat1(){
+                    return <td>
+                                <h3>development</h3> <br/>
+                                <i className="fa fa-desktop" aria-hidden="true"></i> <br/> <br/>
+                                <p style={{color: "dimgray"}}>building a custom website solution <br/> based on your
+                                    html, css, javascript reactjs <br/> nodejs and mongodb
+                                    specification</p> <br/>
+                            </td>
+                }
+
+                    
+
+                function ChildTableDat2(){
+                    return <td>
+                                <h3>Seo specialization</h3> <br/>
+
+                                <i className="fa fa-rocket" aria-hidden="true"></i> <br/> <br/>
+
+                                <p style={{color: "dimgray"}}>audit your website,perfrom <br/> technical improvement a
+                                    technical
+                                    and write meta tags</p> <br/>
+                            </td>
+                }
+
+
+
+
+                function ChildTableDat3(){
+                    return <td>
+                                <h3>Data base</h3> <br/>
+                                <i className="fa fa-database" aria-hidden="true"></i> <br/> <br/>
+                                <p style={{color: "dimgray"}}>SSL certicate installation and <br/> configuration, redirection
+                                    
+                                congratulation on your website</p> <br/>
+
+                            </td>
+                }
+
+
+                function ChildTableDat4(){
+                    return <td>
+                                <h3>Data security</h3> <br/>
+                                <i className="fa fa-shield" aria-hidden="true"></i> <br/> <br/>
+                                <p style={{color: "dimgray"}}>Startegy with leading data protection <br/>technology to safeguard
+                                    
+                                your critical data</p> <br/>
+                            </td>
+                }
+
+
+
+
+
+                   ReactDOM.render(<MainCom/>,root)
+    </script>
+
+    <div id="root"></div>
+  </body>
+</html>
